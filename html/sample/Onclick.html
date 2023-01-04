@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+   Click Event Testing  
+</head>
+<body>
+     <form>
+       <input type="button" onclick="clickevent()" value="Click on Button">
+    </form> -->
+
+    <!-- <p onmouseover="mouseoverevent()"> Keep cursor over me</p>
+    
+</body>
+</html> --> 
+
+<!-- This is the example for Mouseover event -->
+<!-- <html>
+<head> 
+<h1> Javascript Events </h1>
+</head>
+<body>
+<script language="Javascript" type="text/Javascript">
+	function mouseoverevent()
+	{
+		alert("This is JavaTpoint");
+	}
+
+</script>
+<p onmouseover="mouseoverevent()"> Keep cursor over me</p>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<p> This is an example of adding multiple events to the same element. </p>
+<p> Click the following button to see the effect. </p>
+<button id = "btn"> Click me </button>
+<p id = "para"></p>
+<p id = "para1"></p>
+<script>
+function fun() {
+    alert("Welcome to the javaTpoint.com");
+}
+ 
+function fun1() {
+   document.getElementById("para").innerHTML =  "This is second function";
+
+}
+function fun2() {
+   document.getElementById("para1").innerHTML =  "This is third function";
+}
+var mybtn = document.getElementById("btn");
+mybtn.addEventListener("click", fun);
+mybtn.addEventListener("click", fun1);
+mybtn.addEventListener("click", fun2);
+</script>
+</body>
+</html>
+
+ 
